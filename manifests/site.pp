@@ -50,10 +50,8 @@ Homebrew::Formula <| |> -> Package <| |>
 
 node default {
   # core modules, needed for most things
-  include dnsmasq
   include git
   include hub
-  include nginx
   include nvm
 
   # fail if FDE is not enabled
@@ -67,7 +65,7 @@ node default {
   # include nodejs::0-8
 
   # default ruby versions
-  # include ruby::1_8_7
+  include ruby::1_8_7
   # include ruby::1_9_2
   # include ruby::1_9_3
   include ruby::2_0_0
